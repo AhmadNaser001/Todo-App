@@ -17,7 +17,7 @@ This app allows users to add, delete, and store tasks using **Local Storage**, s
 
 
 ## 📸 Preview
-[App Preview](preview.png)
+(preview.png)
 
 ## 📄 License
 This project is open-source and available under the MIT License.
