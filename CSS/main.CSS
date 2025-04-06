@@ -1,0 +1,115 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* =====================================Start Scroll Bar==================================== */
+::-webkit-scrollbar{
+  width: .4rem;
+  border-radius: .5rem;
+  background-color: hsl(220, 8%, 64%);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: .6rem;
+  background-color: #848cff;
+}
+/* =====================================Start Scroll Bar==================================== */
+
+  
+.container {
+  width: 500px;
+  margin: 20px auto;
+
+}
+.form {
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #848cff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0,0.1);
+  background-color: #FFF;
+}
+.input {
+  padding: 10px;
+  border-radius: 6px 0 0  6px;
+  flex: 1;
+  outline: none;
+  border: 1px solid #CCC;
+}
+.input:focus {
+  outline: none;
+}
+.add {
+  border: none;
+  background-color: rgba(8, 6, 133);
+  color: white;
+  padding: 10px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  color: rgb(8, 6, 133);
+  font-weight: 800;
+}
+.tasks {
+  border: 2px solid #848cff;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 430px;
+  background-color: #FFF;
+  overflow-y: auto; 
+
+}
+.tasks .task {
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #848cff;
+  position: relative;
+}
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+.tasks .task:hover {
+  background-color: #e4dfdf53;
+}
+.tasks .task.done {
+  color: #888787;
+  text-decoration: line-through;
+}
+.tasks .task .btnDone {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: rgb(60, 200, 60);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 60px;
+  padding: 7px;
+  width: 30px;
+  text-align: center;
+}
+
+.tasks .task span {
+  position: absolute;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #f93044;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 10px;
+  padding: 7px;
+  width: 30px;
+  text-align: center;
+}
